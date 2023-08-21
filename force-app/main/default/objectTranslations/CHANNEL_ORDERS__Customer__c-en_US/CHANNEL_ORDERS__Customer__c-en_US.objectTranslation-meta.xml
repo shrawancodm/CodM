@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CHANNEL_ORDERS__Country_2_letter_code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CHANNEL_ORDERS__Invalid_OrgID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CHANNEL_ORDERS__OrgID_must_be_alphanumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CHANNEL_ORDERS__Valid_Canada_State</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CHANNEL_ORDERS__Valid_US_State</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>CHANNEL_ORDERS__New_Service_Order</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>CHANNEL_ORDERS__New_Service_Order_List_View</name>
+    </webLinks>
+</CustomObjectTranslation>
