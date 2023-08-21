@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>For_CodM_Attendance</fullName>
+        <ccEmails>mukesh.kumar@codmsoftware.com</ccEmails>
+        <description>For CodM Attendance</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/CodM_Attendance</template>
+    </alerts>
+</Workflow>

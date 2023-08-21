@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Leave_Type__c</name>
+    <picklistValues>
+        <masterLabel>CL(Casual leave)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HL(Half-day leave)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OL(one-day leave)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL/ML(Sick leave/Medical leave)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

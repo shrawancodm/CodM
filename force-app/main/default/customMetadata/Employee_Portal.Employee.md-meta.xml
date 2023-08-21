@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Employee</label>
+    <protected>false</protected>
+    <values>
+        <field>Columns__c</field>
+        <value xsi:type="xsd:string">Employee_Code__c,Joining_Date__c,Employee_Official_Email__c,Department__c,Reporting_Manager_Formula__c,Work_Location__c,Bank_Name__c,Bank_Account_Number__c,IFSC_Code__c,Name_in_Bank_Account__c,Leave_Balance__c</value>
+    </values>
+</CustomMetadata>

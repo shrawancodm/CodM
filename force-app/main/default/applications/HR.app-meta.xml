@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>HR_App</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Employee__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>HR_App</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Employee__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#5B4141</headerColor>
+        <logo>HR</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>This app create on employee detail.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>HR</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Employee__c</tabs>
+    <tabs>Leave__c</tabs>
+    <tabs>Compensation__c</tabs>
+    <tabs>Attendance__c</tabs>
+    <tabs>Asset__c</tabs>
+    <tabs>Client_Interview__c</tabs>
+    <tabs>Expense_Summary__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Employee_UtilityBar</utilityBar>
+</CustomApplication>

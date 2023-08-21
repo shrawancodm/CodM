@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CHANNEL_ORDERS__Product_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to the related product catalog.</description>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>CHANNEL_ORDERS__Partner_Product_Catalog__c.CreatedDate</field>
+            <operation>greaterThan</operation>
+            <value>12/31/1899, 7:30 PM</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>CHANNEL_ORDERS__Partner_Product_Catalog__c</referenceTo>
+    <relationshipLabel>Service Order Detail</relationshipLabel>
+    <relationshipName>Product_Name</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>00:00:00.000Z</fridayEndTime>
+        <fridayStartTime>00:00:00.000Z</fridayStartTime>
+        <mondayEndTime>00:00:00.000Z</mondayEndTime>
+        <mondayStartTime>00:00:00.000Z</mondayStartTime>
+        <name>Default</name>
+        <saturdayEndTime>00:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>00:00:00.000Z</saturdayStartTime>
+        <sundayEndTime>00:00:00.000Z</sundayEndTime>
+        <sundayStartTime>00:00:00.000Z</sundayStartTime>
+        <thursdayEndTime>00:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>00:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/Los_Angeles</timeZoneId>
+        <tuesdayEndTime>00:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>00:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>00:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>00:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <activityDate>2023-11-19</activityDate>
+        <description>Chhath is an ancient Hindu festival historically native to the Indian subcontinent</description>
+        <isRecurring>false</isRecurring>
+        <name>Chhath Pooja</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-12-25</activityDate>
+        <description>Christian festival commemorating the birth of Jesus Christ, the Son of God</description>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-11-12</activityDate>
+        <description>Diwali celebrates Rama&apos;s eventual defeat of the evil spirit Ravana</description>
+        <isRecurring>false</isRecurring>
+        <name>Diwali</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-10-24</activityDate>
+        <description>Dussehra, also called Dasara or Vijayadashami, in Hinduism, holiday marking the triumph of Rama</description>
+        <isRecurring>false</isRecurring>
+        <name>Dussehra</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-06-29</activityDate>
+        <description>Eid al-Adha or the Holiday of Sacrifice i</description>
+        <isRecurring>false</isRecurring>
+        <name>Eid-Adha</name>
+    </holidays>
+    <holidays>
+        <description>Mahatma Gandhi, was an Indian revolutionary, anti-colonial nationalist</description>
+        <isRecurring>true</isRecurring>
+        <name>Gandhi Jayanti</name>
+        <recurrenceDayOfMonth>2</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>October</recurrenceMonthOfYear>
+        <recurrenceStartDate>2023-10-02</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2023-03-08</activityDate>
+        <description>Holi is an ancient Hindu tradition and also one of the most popular festivals in Hinduism.</description>
+        <isRecurring>false</isRecurring>
+        <name>Holi</name>
+    </holidays>
+    <holidays>
+        <description>United Kingdom on 15 August 1947, the day when the provisions of the Indian Independence Act</description>
+        <isRecurring>true</isRecurring>
+        <name>Independence Day</name>
+        <recurrenceDayOfMonth>15</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>August</recurrenceMonthOfYear>
+        <recurrenceStartDate>2023-08-15</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2023-01-27</activityDate>
+        <description>Enjoy your weekend with your loved ones.</description>
+        <isRecurring>false</isRecurring>
+        <name>Long Weekend -- CodM</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-01-14</activityDate>
+        <description>Makar Sankranti is observed with social festivities such as colourful decorations</description>
+        <isRecurring>false</isRecurring>
+        <name>Makar Shankranti</name>
+    </holidays>
+    <holidays>
+        <description>Republic Day commemorates the implementation of the Constitution on January 26, 1950.</description>
+        <isRecurring>true</isRecurring>
+        <name>Republic Day</name>
+        <recurrenceDayOfMonth>26</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2023-01-26</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+</BusinessHoursSettings>
