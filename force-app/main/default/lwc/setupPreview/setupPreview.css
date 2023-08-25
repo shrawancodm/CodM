@@ -1,0 +1,21 @@
+.displayFormat  
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    list-style: none;
+}
+
+/* :host {
+  --slds-c-card-color-background:azure;
+} */
+
+.float_right
+{
+    float: right;
+    margin-right: 1%;
+}
+.float_left{
+   float: left;
+    margin-left: 1%;
+
+}

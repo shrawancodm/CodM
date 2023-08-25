@@ -1,0 +1,49 @@
+<template>
+    <article class="slds-card">
+    <lightning-card title="Selected Objects and Fields">
+        <div class="slds-m-left_medium">
+            <b>Selected Object</b>
+        </div><br>
+        <div class="slds-m-left_x-large">
+            {selectedObjectName}
+
+        </div><br>
+        <div class="slds-m-left_medium">
+            <b>Selected Fields</b>
+        </div><br>
+        <div class="displayFormat">
+            <template for:each={selectedFieldsPreview} for:item="singleField">
+                <p key={singleField.value}>
+                    <lightning-input class="slds-p-left_xx-large"
+                                     label={singleField.label}  
+                                     type="checkbox"
+                                     data-id={singleField.value}
+                                     disabled="disabled"
+                                     checked>
+                    </lightning-input>
+                </p>
+            </template>
+        </div><br>
+        <div style="padding-bottom:10px;" class="slds-clearfix">
+            <div class="float_left">    
+                            <lightning-button variant="base" 
+                                              label="Back to Home" 
+                                              onclick={handleback}>
+                            </lightning-button>
+                    </div>
+            <div class="float_right"> 
+                <lightning-button class="slds-m-left_x-small"
+                                  variant="brand"
+                                  label="Edit" 
+                                  onclick={editSelection}>
+                </lightning-button>
+                <lightning-button class="slds-m-left_x-small"
+                                  variant="brand" 
+                                  label="Submit" 
+                                  onclick={saveRecord}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+    </article>
+</template>

@@ -1,0 +1,118 @@
+<template>
+      <template if:false={showComponent}>
+            <div class="displaycenter">
+            <p style="padding-bottom:5px;padding-left:10px;color:white;"><b>Select Object to Track</b></p>
+                <c-searchable-combobox
+                required="true"
+                options={objectsList}
+                value={label}
+                onrecordselection={onSelection}
+                    ></c-searchable-combobox><br/>
+
+                </div>
+                <div if:true={fieldsSpinner} class="preloader">
+                    <lightning-spinner variant="brand"     
+                                       size="medium">
+                    </lightning-spinner>
+                </div>
+               
+                <template if:true={newmessage}>
+                    <p> </p>
+                    </template>
+                
+                <template if:true={label}>
+                <template if:true={showMessage}>
+                    <div style="background:white;height:80px;" class="slds-box">
+
+                       <b>{label} Tracking is already configured.</b><br/>
+                     <div class="float_right">    
+                            <lightning-button variant="brand"  
+                                              label="Edit" 
+                                              onclick={editConfigRecord}>
+                            </lightning-button>
+                            <lightning-button class="slds-m-left_x-small"
+                                              variant="brand outline" 
+                                              label="Preview" 
+                                              onclick={previewConfigRecord}>
+                            </lightning-button>
+                        </div>
+                        </div>
+                </template>
+                <template if:false={showMessage}>
+                <template if:true={fieldcount}>
+                <template if:false={newmessage}>
+                    
+                    <p style="margin-left:30%;margin-right:30%;">
+                        <lightning-card>
+                        <b style="padding-left:40px;">No Fields Available for Selected Object</b>
+                        </lightning-card>
+                        </p>
+                </template>
+                </template>
+                </template>
+
+                <template if:false={fieldcount}>
+               <template if:true={showFieldMessage}>
+                   <div style="background:white;">
+                <template if:false={showMessage}>
+                    <div class="slds-m-left_medium">
+                        <p style="padding-top:10px;" class="success"><b>Select Fields</b></p>
+                    </div><br>
+                    <div class="displayFormat">
+                        <template for:each={displayFields} for:item="singleField">
+                            <p key={singleField.value}>
+                                <lightning-input class="slds-p-left_xx-large"
+                                                label={singleField.label}  
+                                                type="checkbox"
+                                                data-id={singleField.value}
+                                                data-label={singleField.label}
+                                                data-value={singleField.value}
+                                                checked={singleField.isChecked}
+                                                onchange={handleChangeFields}>
+                                </lightning-input>
+                            </p>
+                        </template>
+                    </div><br>
+                    <div style="padding-bottom:10px;" class="slds-clearfix">
+                        <div class="float_left">    
+                            <lightning-button variant="base" 
+                                              label="Back to Home" 
+                                              onclick={handleback}>
+                            </lightning-button>
+                        </div>
+                        <div class="float_right">    
+                            <lightning-button variant="brand outline" 
+                                              label="Preview" 
+                                              onclick={showSelected}
+                                              disabled={disableButton}>
+                            </lightning-button>
+                            <lightning-button class="slds-m-left_x-small"
+                                              variant="brand" 
+                                              label="Reset" 
+                                              onclick={resetSelection}>
+                            </lightning-button>
+                            <template if:true={showPreviousButton}>
+                                <lightning-button class="slds-m-left_x-small"
+                                                  variant="brand" 
+                                                  label="Reset to Previous" 
+                                                  onclick={backToConfiguredFields}>
+                                </lightning-button>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+                </div>
+               </template>
+                </template>
+            </template>
+    </template>
+    <template if:true={showComponent}>
+        <c-setup-preview
+            selected-object-api={objectAPI}
+            selected-object-name={label}
+            selected-fields-preview={selectedfields}
+            onmycustomevent={editRecord}
+            onredirect={resetSelection}>
+        </c-setup-preview>
+    </template>
+</template>
